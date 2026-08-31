@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="28d4-bd2e-4858-ece6" name="WhoreAss Hearsay (2026)" revision="129" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="28d4-bd2e-4858-ece6" name="WhoreAss Hearsay (2026)" revision="1" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
-    <publication id="e2a4-ac85-1bef-22f5" name="Github" shortName="BSData/horus-heresy" publisherUrl="https://github.com/BSData/horus-heresy"/>
+    <publication id="e2a4-ac85-1bef-22f5" name="Github" shortName="Hextechnician/horus-heresy-2nd-edition" publisherUrl="https://github.com/Hextechnician/horus-heresy-2nd-edition"/>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
     <publication id="817a-6288-e016-7469" name="Liber Astartes – Loyalist Legiones Astartes Army Book" shortName="LA - Loyalist" publicationDate="June 2022"/>
     <publication id="09c5-eeae-f398-b653" name="Liber Hereticus – Traitor Legiones Astartes Army Book" shortName="LA - Traitor" publicationDate="June 2022"/>
@@ -31,6 +31,7 @@
     <publication id="2489-0c1d-8ed5-2515" name="Exemplary Battles of the Age of Darkness - The Assault on Castrum Velx" publisher="Warhammer Community" publicationDate="2024-06-11" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2024/06/zxc5pjdMmgEBrmJT.pdf"/>
     <publication id="4934-46f7-208b-b4af" name="Campaigns in the Age of Darkness - Martian Civil War" shortName="CotAoD - MCW" publicationDate="Sept 2024"/>
     <publication id="5b2d-881e-a870-a7d1" name="Legion Tarantula Sentry Gun Battery" publicationDate="June 2025" publisherUrl="https://assets.warhammer-community.com/eng_jun25_thehorusheresy_additionalrules_tarantula-nq1r50lr4a-ec6sail0d9.pdf"/>
+    <publication id="4ee6-8b92-84cb-6023" name="I made it the fuck up"/>
   </publications>
   <costTypes>
     <costType id="d2ee-04cb-5f8a-2642" name="Pts" defaultCostLimit="-1.0" hidden="false"/>
@@ -11097,7 +11098,7 @@ Where the effects of a Mutable Tactics trait contradict another, Flaws take prio
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="cfd6-c807-b4e0-b4b6" name="Plasma Bombard" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="cfd6-c807-b4e0-b4b6" name="Plasma Bombard" page="I made it the fuck up" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="5355-0897-1e65-01cb" name="Plasma Bombard" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
@@ -11113,6 +11114,28 @@ Where the effects of a Mutable Tactics trait contradict another, Flaws take prio
         <infoLink id="d6a1-4dba-07c0-5cdb" name="Breaching (X)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule"/>
         <infoLink id="275a-3e51-a016-d8f5" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="14c2-550c-df6d-de14" name="Disintegrator Cannon" publicationId="4ee6-8b92-84cb-6023" page="" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="53b7-f76e-b6e3-9e14" name="Disintegrator Cannon" publicationId="4ee6-8b92-84cb-6023" page="" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Instant Death, Gets Hot</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="be2c-b26d-37fe-2c0f" name="Gets Hot" hidden="false" targetId="679f-9d97-5ace-a652" type="rule"/>
+        <infoLink id="dd2e-30c0-19a2-6a86" name="Instant Death" hidden="false" targetId="9e96-fff1-b916-d9a3" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -18411,6 +18434,11 @@ Only models with the Vehicle Unit Type and Flyer Sub-type may make the Combat Ai
         <characteristic name="HP" typeId="a76c-83b1-602f-9e62">5</characteristic>
         <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">12</characteristic>
         <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">One on each side of the hull and one at the front.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="6ce9-e25d-02a7-4196" name="Saturnine Terminator Armour" publicationId="4ee6-8b92-84cb-6023" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+      <characteristics>
+        <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Legion Saturnine Terminator armour confers a 2+ Armour Save, a 4+ Invulnerable Save and Battle Hardened (1). In addition, a unit that includes any models with Saturnine Terminator armour may not make Sweeping Advances.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
