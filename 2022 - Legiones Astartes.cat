@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6393-649c-7213-a327" name="Legions Astartes" revision="213" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="129" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6393-649c-7213-a327" name="Legions Astartes" revision="213" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="28d4-bd2e-4858-ece7" gameSystemRevision="129" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <comment>Do not import me into a non-LA list or you&apos;ll end up with rites of war.</comment>
   <publications>
     <publication id="0594-a9b0-6f10-090e" name="Legion Javelin Squadron update" publisher="Warhammer Community Downloads" publicationDate="May 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/05/hd7WOnm2lKCHkskG.pdf"/>
@@ -253,6 +253,15 @@ Additional rules are given to units based on Legion and Unit.</description>
             <modifier type="set" field="name" value="Bulky (3)"/>
           </modifiers>
         </infoLink>
+        <infoLink id="8f97-b6f0-e8a4-c345" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
+        <infoLink id="d63f-ca67-7e60-0c9b" name="Firing Protocols (X)" hidden="false" targetId="32a3-f599-5c92-2945" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Firing Protocols (2)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="5a64-6802-7ff3-a8fd" name="Move Through Cover" hidden="false" targetId="2b6f-bfec-759e-1746" type="rule"/>
+        <infoLink id="9118-1f68-8739-519c" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule"/>
+        <infoLink id="daaf-9321-b30d-ea09" name="Deep Strike" hidden="false" targetId="f1e1-986f-c783-ca9e" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="d7e4-5d02-b5b7-6e3e" name="Infantry Unit Type" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
@@ -286,9 +295,109 @@ Additional rules are given to units based on Legion and Unit.</description>
                   </characteristics>
                 </profile>
               </profiles>
+              <selectionEntryGroups>
+                <selectionEntryGroup id="1983-1543-26bf-1073" name="Wargear" hidden="false" collective="false" import="true">
+                  <entryLinks>
+                    <entryLink id="85d9-7552-9b7f-cf04" name="Toxin Bombs" hidden="false" collective="false" import="true" targetId="987b-9177-dde0-bf9b" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5813-e786-09b6-0401" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="bd11-2e67-dd88-1cf8" name="Trophies of Judgement" hidden="false" collective="false" import="true" targetId="bde7-7c77-5973-cd52" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bfe9-7e12-392f-3d5d" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="422d-bd8a-ac82-338a" name="Infravisor" hidden="false" collective="false" import="true" targetId="bc5b-fcd7-aeed-e97c" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="11ff-6b0d-ab0e-4da9" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="ad27-524d-aa88-3c17" name="Power Dagger" hidden="false" collective="false" import="true" targetId="8157-b77c-0dd3-85b2" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9653-e6b3-905c-7b27" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="d2da-78d1-3624-3826" name="Venom Spheres" hidden="false" collective="false" import="true" targetId="82f5-cca1-51a0-31dd" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="063e-aa10-0e27-f474" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="637c-8d86-92bd-28bd" name="Prosperine Arcana:" hidden="false" collective="false" import="true" targetId="e6a0-3ea2-f7ca-411f" type="selectionEntryGroup"/>
+                    <entryLink id="2d09-3e1c-3223-28f8" name="Surgical Augment (Unit Character)" hidden="false" collective="false" import="true" targetId="aeb3-6a73-da1d-2b90" type="selectionEntryGroup">
+                      <modifiers>
+                        <modifier type="set" field="fdb8-3892-38d6-d7f8" value="1">
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e221-0a54-9f94-988f" type="equalTo"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
+                    <entryLink id="f9c9-5a04-dbcd-8b1d" name="Master-craft one weapon" hidden="false" collective="false" import="true" targetId="3d6e-5c80-d195-0f2e" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5127-9f13-8127-4dd5" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="3154-bc6f-9225-1cdf" name="Cyber-Familiar" hidden="false" collective="false" import="true" targetId="6c85-4601-cf58-7b35" type="selectionEntry">
+                      <modifiers>
+                        <modifier type="set" field="hidden" value="true">
+                          <conditions>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bfc9-c99c-bf8a-3917" type="equalTo"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a2b3-90e2-5201-f5d4" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="e8c6-4bea-6adf-6c8e" name="Rad Grenades" hidden="true" collective="false" import="true" targetId="1b0b-3dfc-9521-b27e" type="selectionEntry">
+                      <modifiers>
+                        <modifier type="set" field="hidden" value="false">
+                          <comment>node_id_eafb-5453-4dd9-8623</comment>
+                          <conditions>
+                            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d3b5-da3a-8c3b-3faf" type="equalTo">
+                              <comment>node_id_a02c-8632-499f-827c</comment>
+                            </condition>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1e0e-e6fd-4352-2a26" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="eb0c-e606-a7c3-7729" name="Debased Augments (Unit Character)" hidden="false" collective="false" import="true" targetId="c560-379a-5b80-8d6d" type="selectionEntryGroup"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <entryLinks>
                 <entryLink id="d603-6a89-c710-c3cf" name="Saturnine Melee Weapon" hidden="false" collective="false" import="true" targetId="786b-30a6-7345-0b34" type="selectionEntryGroup"/>
                 <entryLink id="f686-3667-dc65-0fb7" name="Saturnine Ranged Weapon" hidden="false" collective="false" import="true" targetId="60f8-3d8e-1d89-50de" type="selectionEntryGroup"/>
+                <entryLink id="cf7b-19a8-7dcc-03ad" name="Saturnine Fist Pistol" hidden="false" collective="false" import="true" targetId="2035-2bb5-f1b7-0452" type="selectionEntryGroup"/>
               </entryLinks>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
@@ -327,6 +436,7 @@ Additional rules are given to units based on Legion and Unit.</description>
               <entryLinks>
                 <entryLink id="91b3-c096-1529-b364" name="Saturnine Melee Weapon" hidden="false" collective="false" import="true" targetId="786b-30a6-7345-0b34" type="selectionEntryGroup"/>
                 <entryLink id="3bbf-6463-0aab-4503" name="Saturnine Ranged Weapon" hidden="false" collective="false" import="true" targetId="60f8-3d8e-1d89-50de" type="selectionEntryGroup"/>
+                <entryLink id="1c8c-c905-9ff9-97b3" name="Saturnine Fist Pistol" hidden="false" collective="false" import="true" targetId="2035-2bb5-f1b7-0452" type="selectionEntryGroup"/>
               </entryLinks>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="65.0"/>
@@ -334,9 +444,60 @@ Additional rules are given to units based on Legion and Unit.</description>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup id="a4d4-1953-9895-6b4c" name="0) Legion-specific Upgrades" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="797f-e21b-a964-607f" name="Teleport Strike" hidden="false" collective="false" import="true" targetId="4bb4-46d4-6cdd-4cd8" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="64d8-9984-60a3-7fcd" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="b47e-2a09-3053-5037" name="Preysight" hidden="false" collective="false" import="true" targetId="b905-4d78-c141-4e63" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a17-3f8b-1958-c6bc" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="45bd-60d2-986e-0931" name="Dark Channeling" hidden="false" collective="false" import="true" targetId="555f-3998-a06e-f415" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce39-1bb1-9772-1f7c" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="2b52-800b-cc6b-984d" name="Surgical Augment (Unit)" hidden="false" collective="false" import="true" targetId="bcb4-86cb-166b-f0e1" type="selectionEntryGroup"/>
+            <entryLink id="a608-ea79-8658-a88f" name="Deepstike (Hammerfall Strike Force)" hidden="false" collective="false" import="true" targetId="11a8-be80-4f59-f00e" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5ae-fd1c-729d-d855" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="8350-bc9f-e3fe-9fea" name="The Spreading Corruption" hidden="false" collective="false" import="true" targetId="f783-f0ea-fe35-cdeb" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="10bf-d061-55fd-7215" name="Saturnine Terminator Armour" hidden="false" collective="false" import="true" targetId="3de6-9507-3feb-8bc7" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="72a1-168c-b44b-21bf" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9175-6789-ba49-49b0" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="90.0"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="85.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
@@ -67861,6 +68022,11 @@ In addition, Kaedes Nex can be included as part of a Blackshields Detachment (se
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="165.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="3de6-9507-3feb-8bc7" name="Saturnine Terminator Armour" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="34bd-f5ac-9f38-299b" name="Saturnine Terminator Armour" hidden="false" targetId="6ce9-e25d-02a7-4196" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="61a2-7005-1e6c-c08e" name="Hexagrammaton Choice:" hidden="true" collective="false" import="true">
@@ -74369,6 +74535,16 @@ A model with this upgrade gains a Pintle Mounted banestrike bolt cannon.</charac
       </constraints>
       <entryLinks>
         <entryLink id="56b4-473a-49ef-13c3" name="Power Fist" hidden="false" collective="false" import="true" targetId="768d-b89b-7328-d749" type="selectionEntry"/>
+        <entryLink id="b4c5-12de-1d31-e649" name="Disintegrator Cannon" hidden="false" collective="false" import="true" targetId="14c2-550c-df6d-de14" type="selectionEntry">
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="df3e-5ee8-0166-7f06" name="Plasma Bombard" hidden="false" collective="false" import="true" targetId="cfd6-c807-b4e0-b4b6" type="selectionEntry">
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+          </costs>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="60f8-3d8e-1d89-50de" name="Saturnine Ranged Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="47e5-15bb-c377-f06b">
@@ -74378,7 +74554,24 @@ A model with this upgrade gains a Pintle Mounted banestrike bolt cannon.</charac
       </constraints>
       <entryLinks>
         <entryLink id="47e5-15bb-c377-f06b" name="Plasma Bombard" hidden="false" collective="false" import="true" targetId="cfd6-c807-b4e0-b4b6" type="selectionEntry"/>
-        <entryLink id="b9f8-61ab-f580-ed05" name="Disintegrator" hidden="false" collective="false" import="true" targetId="a567-9434-36f3-5fd4" type="selectionEntry"/>
+        <entryLink id="b9f8-61ab-f580-ed05" name="Disintegrator Cannon" hidden="false" collective="false" import="true" targetId="14c2-550c-df6d-de14" type="selectionEntry">
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="2035-2bb5-f1b7-0452" name="Saturnine Fist Pistol" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf84-c07a-70d0-5cfa" type="max"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa62-d155-e28a-0812" type="min"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="d53a-ac54-e98f-c2a4" name="Disintegrator Pistol" hidden="false" collective="false" import="true" targetId="980e-b1e7-a4a4-407f" type="selectionEntry">
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+          </costs>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
