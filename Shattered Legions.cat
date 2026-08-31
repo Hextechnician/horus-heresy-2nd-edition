@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="67bb-e640-ef0a-0e16" name="Shattered Legions" gameSystemId="28d4-bd2e-4858-ece7" gameSystemRevision="115" revision="5" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="67bb-e640-ef0a-0e00" name="Shattered Legions" gameSystemId="28d4-bd2e-4858-ece7" gameSystemRevision="115" revision="5" battleScribeVersion="2.03" type="catalogue">
   <catalogueLinks>
-    <catalogueLink type="catalogue" name="Legions Astartes" id="50ca-2201-2e00-f825" targetId="6393-649c-7213-a327" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="Legions Astartes" id="50ca-2201-2e00-f800" targetId="6393-649c-7213-a300" importRootEntries="true"/>
   </catalogueLinks>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Retinue" id="456b-39f3-0d4f-ba17" hidden="false" collective="false" import="true">
